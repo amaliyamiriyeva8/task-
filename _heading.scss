@@ -1,0 +1,155 @@
+*{
+    margin: 0 auto;
+    padding: 0 auto;
+    box-sizing: border-box;
+}
+nav{
+    width: 100%;
+    background-color: rgb(241, 196, 196);
+    .container{
+        @include container();
+        .navbar{
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .first{
+            width: 150px;
+           max-width: 100%;
+           &:hover{
+            cursor: pointer;
+           }
+           img{
+            background-position: center;
+            background-size: cover;
+            overflow: hidden;
+            object-fit: cover;
+           }
+          }
+          .second{
+            width: 500px;
+            ul{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                font-weight: $font-weight-2;
+                
+                li{
+                    font-family: $font-family-1;
+                    list-style: none;
+                    &:hover{
+                    color: $chocolate;
+                    transition: all 0.3s;
+                    cursor: pointer;
+                    }
+                    &:hover ul.submenu{
+                    display: block;
+                    color: black;
+                    }
+                    ul.submenu{
+                        flex-direction: column;
+                        width: 140px;
+                        background-color: whitesmoke;
+                        position: absolute;
+                        display: none;
+                        z-index: 1;
+                        li{
+                            height: 40px;
+                            display: block;
+                        }
+                       
+                    }
+                    &:hover ul.submenu1{
+                        display: block;
+                        color: black;
+                        }
+                        ul.submenu1{
+                            flex-direction: column;
+                            width: 140px;
+                            background-color: whitesmoke;
+                            position: absolute;
+                            display: none;
+                            z-index: 1;
+                            li{
+                                height: 50px;
+                                display: block;
+                            }
+                           
+                        }
+                        &:hover ul.submenu2{
+                            display: block;
+                            color: black;
+                            }
+                            ul.submenu2{
+                                flex-direction: column;
+                                width: 140px;
+                                background-color: whitesmoke;
+                                position: absolute;
+                                display: none;
+                                z-index: 1;
+                                li{
+                                    height: 55px;
+                                    display: block;
+                                }
+                               
+                            }
+                            &:hover ul.submenu3{
+                                display: block;
+                                color: black;
+                                }
+                                ul.submenu3{
+                                    flex-direction: column;
+                                    width: 140px;
+                                    background-color: whitesmoke;
+                                    position: absolute;
+                                    display: none;
+                                    z-index: 1;
+                                    li{
+                                        height: 55px;
+                                        display: block;
+                                    }
+                                   
+                                }
+                                
+                }
+            }
+          }
+          .thrid{
+            button{
+                border: none;
+                outline: none;
+                font-size: 18px;
+                font-weight: 600;
+                color: white;
+                background-color: $chocolate;
+                padding: 10px 20px;
+                border-radius: 8px;
+                cursor: pointer;
+               
+            }
+        }
+         
+        }
+    }
+}
+@media screen and (max-width:1200px) {
+    nav{
+        width: 100%;
+        .first{
+            img{
+                width: 60%;
+            }
+        }
+        .second{
+
+        }
+        .thrid{
+        button{
+           background-color: transparent;
+           color: black;
+        }
+    }
+    }
+   
+}

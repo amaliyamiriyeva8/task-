@@ -3,6 +3,13 @@
     padding: 0 auto;
     box-sizing: border-box;
 }
+body{
+    &::-webkit-scrollbar{width:8px}
+    &::-webkit-scrollbar-track{background-color: rgb(239, 212, 177)}
+    &::-webkit-scrollbar-thumb{background-color: $chocolate;border-radius: 4px;}
+    &::-webkit-scrollbar-thumb:hover{background-color: grey}
+}
+
 
         nav{
          background-color: $white;
@@ -39,15 +46,11 @@
                 font-family: $font-family-1;
                 cursor: pointer;
                 position: relative;
-                &:hover .dropdown-content{
-                    display: block;
-                }
                 li{
                     position: relative;
                     padding: 12px 0px;
                     color: black;
                     &:hover{
-                       
                         color: $chocolate;
                         transition: all 0.6s ease;
                     }
@@ -245,9 +248,7 @@
             }
             .best{
                width: 45%;
-               display: flex;
-               justify-content: center;
-               align-items: center;
+               @include display();
                flex-direction: column;
                .photo1{
                 display: flex;
@@ -382,9 +383,7 @@
     .container1{
         @include container1();
         .display{
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include display();
             flex-direction: column;
             .name{
                 width: 40%;
@@ -421,15 +420,11 @@
             .flex{
                 padding-top: 40px;
                 padding-bottom: 40px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
+                @include display();
                 flex-wrap: wrap;
                 gap: 30px;
                 .c{
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
+                    @include display();
                     flex-direction: column;
                     width: 22%;
                     padding: 50px 0px;
@@ -469,9 +464,7 @@
     .container1{
         @include container1();
         .barry{
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include display();
             flex-direction: column;
             .name{
                 width: 80%;
@@ -508,9 +501,7 @@
             }
             .you{
                 width: 100%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
+                @include display();
                 .nan{
                  width: 20%;
                  margin-left: 0;
@@ -606,22 +597,16 @@
                 .null{
                     margin-right: 0;
                     width: 79%;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
+                    @include display();
                     flex-direction: column;
                     gap: 20px;
                     .d{
                         background-color: white;
                         width: 100%;
                         padding: 40px 0px;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
+                        @include display();
                         .black{
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
+                            @include display();
                             width: 25%;
                             
                              .p{
@@ -710,9 +695,7 @@
     .container1{
         @include container1();
             .poco{
-                display: flex;
-                justify-content: center;
-                align-items: center;
+                @include display();
                 flex-direction: column;
                 .point{
                     margin-top: 50px;
@@ -739,9 +722,7 @@
                     width: 80%;
                     .off-1{
                         width: 100%;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
+                        @include display();
                         img{
                             margin-right: 5px;
                             width: 18px;
@@ -881,9 +862,7 @@
                     .no-2{
                         padding-bottom: 40px;
                         width: 100%;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
+                        @include display();
                         .ipsum{
                             width: 90%;
                             p{
@@ -896,9 +875,7 @@
                     .no-4{
                         padding-bottom: 40px;
                         width: 100%;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
+                        @include display();
                         .ipsum{
                             width: 90%;
                             p{
@@ -911,9 +888,7 @@
                     .no-6{
                         padding-bottom: 40px;
                         width: 100%;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
+                        @include display();
                         .ipsum{
                             width: 90%;
                             p{
@@ -928,11 +903,727 @@
         }
     }
 }
+.section5{
+    .container1{
+        @include container1();
+        .sign{
+            width: 100%;
+            @include display();
+            flex-direction: column;
+            .name{
+                width: 80%;
+                .off-1{
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    img{
+                        margin-right: 5px;
+                        width: 18px;
+                        height: 20px;
+                        vertical-align: middle;
+                    }
+                    p{
+                        font-weight: $font-weight-2;
+                        font-family: $font-family-1;
+                        color: black;
+                        font-size: 16px;
+                       margin-left: 5px;
+                    }
+                }
+                .off-2{
+                    width: 100%;
+                    text-align: center;
+                    p{
+                        padding-top: 10px;
+                        padding-bottom: 30px;
+                        font-size: 45px;
+                        font-family: $font-family-1;
+                        font-weight: $font-weight-1;
+                    }
+                }
+        }
+        }
+        .mind{
+            width: 70%;
+            ul{
+               padding: 40px 0px;
+                @include display();
+                list-style: none;
+                cursor: pointer;
+                flex-wrap: wrap;
+                li{
+                    font-size: 17px;
+                    font-family: $font-family-1;
+                    padding: 5px 0px;
+                    color: black;
+                   &:hover{
+                    color:$chocolate;
+                    font-weight: 600;
+                   }
+                    
+                }
+            }
+            
+        }
+        .grid{
+            padding-bottom: 70px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 24px;
+            .div1,.div2,.div3,.div4,.div5,.div6,.div7{
+                width: 100%;
+                overflow: hidden;
+                @include textarea();
+                &::before{
+                    @include display();
+                    width: 70%;
+                    height: 120px;
+                    content: "The best way to impress your web";
+                    background-color: $chocolate;
+                    color: white;
+                    border-radius: 7px;
+                    font-size: 22px;
+                    font-family: $font-family-1;
+                    position: absolute;
+                    cursor: pointer;
+                    left: 60px;
+                    bottom: 30px;
+                    right: 0;
+                    transform: scale(0);
+                    z-index: 1;
+                    transition: all 0.5s ease;
+                }
+                &:hover::before{
+                    
+                    transform: scale(1);
+                }
+                img{
+                    width: 100%;
+                  height: 370px;
+                    border-style: none;
+                    max-width: 100%;
+                    vertical-align: middle;
+                    object-fit: cover;
+                    transition: all 0.5s ease;
+                     background-position: center;
+                    background-size: cover;
+                   
+                    &:hover::before{
+                        transform: scale(1);
+                    }
+                    &:hover{
+                    filter: brightness(55%);
+                    transition: all 1s ease;
+                }
+                }
+                
+            }
+            .div8{
+                width: 100%;
+                grid-column: 2/4;
+                img{
+                    width: 100%;
+                    height: 370px;
+                    border-style: none;
+                    background-position: center;
+                    background-size: cover;
+                    max-width: 100%;
+                    vertical-align: middle;
+                    object-fit: cover;
+                    transition: all 0.5s ease;
+                   &:hover{
+                    filter: brightness(55%);
+                    transition: all 1s ease;
+                }
+                }
+            }
+        }
+    }
+}
+.section6{
+    padding-top: 50px;
+    .container1{
+        @include container1();
+        .happy{
+            @include display();
+            flex-direction: column;
+            .name{
+                width: 100%;
+                .off-1{
+                    
+                    @include display();
+                    img{
+                        margin-right: 5px;
+                        width: 18px;
+                        height: 20px;
+                        vertical-align: middle;
+                    }
+                    p{
+                        font-weight: $font-weight-2;
+                        font-family: $font-family-1;
+                        color: black;
+                        font-size: 16px;
+                       margin-left: 5px;
+                    }
+                }
+                .off-2{
+                    width: 100%;
+                    text-align: center;
+                    p{
+                        padding-top: 10px;
+                        padding-bottom: 10px;
+                        font-size: 45px;
+                        font-family: $font-family-1;
+                        font-weight: $font-weight-1;
+                    }
+                }
+        }
+        .happier{
+            width: 100%;
+            height: 200px;
+            padding: 60px 0px;
+            @include display();
+            gap: 18px;
+            .s-1,.s-2,.s-3,.s-4,.s-5,.s-6,.s-7,.s-8{
+                @include display();
+                width: 210px;
+                padding: 25px 0px;
+                border: 1px solid $chocolate;
+                border-radius: 4px;
+            }
+        }
+        }
+        .icons{
+            width: 20%;
+            @include display();
+            padding-bottom: 80px;
+            padding-top: 40px;
+            i{
+                font-size: 40px;
+                color: rgb(91, 90, 90);
+            }
+            .a{
+                font-size: 40px;
+                color: $chocolate;
+            }
+        }
+    }
+}
+.section7{
+    padding: 60px 0px;
+    .container1{
+        @include container1();
+        .boolean{
+            @include display();
+            flex-direction: column;
+            .name{
+                width: 80%;
+                .off-1{
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    img{
+                        margin-right: 5px;
+                        width: 18px;
+                        height: 20px;
+                        vertical-align: middle;
+                    }
+                    p{
+                        font-weight: $font-weight-2;
+                        font-family: $font-family-1;
+                        color: black;
+                        font-size: 16px;
+                       margin-left: 5px;
+                    }
+                }
+                .off-2{
+                    width: 100%;
+                    text-align: center;
+                    p{
+                        padding-top: 10px;
+                        padding-bottom: 30px;
+                        font-size: 45px;
+                        font-family: $font-family-1;
+                        font-weight: $font-weight-1;
+                    }
+                }
+        }
+        .false{
+            @include display();
+            width: 100%;
+            gap: 20px;
+            .sun-1,.sun-2,.sun-3{
+                border-radius: 5px;
+                border: 1px solid $color;
+                width: 32%;
+                .x-1{
+                    width: 100%;
+                    img{
+                        background-position: center;
+                        background-size: cover;
+                        max-width: 100%;
+                        border-radius: 5px;
+                        transition: all 0.5s ease;
+                       &:hover{
+                        filter: brightness(55%);
+                        transition: all 1s ease;
+                }
+                    }
+                }
+                .x-2{
+                    padding: 35px 0px;
+                    @include display();
+                    .now{
+                        width: 86%;
+                      p{
+                        padding-bottom: 6px;
+                        font-size: 18px;
+                        font-family: $font-family-1;
+                        color: #676767;
+                      }
+                      h2{
+                        font-family: $font-family-2;
+                        font-size: 22px;
+                        padding: 5px 0px;
+                        transition: all 0.5s ease;
+                        &:hover{
+                            transition: all 0.7s ease;
+                            color: $chocolate;
+                            cursor: pointer;
+                        }
+                      }
+                      h1{
+                        font-family: $font-family-1;
+                        font-size: 15px;
+                        color: $chocolate;
+                        padding-top: 12px;
+                        cursor: pointer;
+                        i{
+                             margin-left: 3px;
+                            font-size: 18px;
+                            transition: all 0.5s ease-in;
+                            &:hover{
+                                transition: all 0.9s ease-in;
+                                margin-left: 23px;
+                            }
+                        }
+                      }
+                    }
+                }
 
+            }
+        }
+        }
+    }
+}
+.section8{
+    padding: 100px 0px;
+    .container1{
+        @include container1();
+        .new{
+            @include display();
+            flex-direction: column;
+           
+            .name{
+                width: 80%;
+                
+                .off-1{
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    img{
+                        margin-right: 5px;
+                        width: 18px;
+                        height: 20px;
+                        vertical-align: middle;
+                    }
+                    p{
+                        font-weight: $font-weight-2;
+                        font-family: $font-family-1;
+                        color: black;
+                        font-size: 16px;
+                       margin-left: 5px;
+                    }
+                }
+                .off-2{
+                    width: 100%;
+                    text-align: center;
+                    p{
+                        padding-top: 10px;
+                        padding-bottom: 30px;
+                        font-size: 45px;
+                        font-family: $font-family-1;
+                        font-weight: $font-weight-1;
+                    }
+                }
+        }
+        .west{
+            width: 100%;
+            @include display();
+            gap: 50px;
+            padding: 40px 0px;
+            .left{
+                width: 66%;
+                .edit-1{
+                    width: 100%;
+                    @include display();
+                    gap: 10px;
+                    
+                   .class-1{
+                    width: 100%;
+                    height: 70px;
+                    input{
+                       @include input();
+                    }
+                }
+                .class-2{
+                    width: 100%;
+                    height: 70px;
+                    input{
+                        @include input();
+                    }
+                }
+                }
+                .edit-2{
+                    width: 100%;
+                    @include display();
+                    gap: 10px;
+                    padding-top: 20px;
+                   .class-3{
+                    width: 100%;
+                    height: 70px;
+                    
+                    input{
+                       @include input();
+                    }
+                }
+                .class-4{
+                    width: 100%;
+                    height: 70px;
+                    input{
+                        @include input();
+                    }
+                }
+                }
+                .textarea{
+                    width: 100%;
+                    height: 140px;
+                    padding-top: 20px;
+                    textarea{
+                        @include input();
+                    }
+            }
+            .div{
+                padding-top: 40px;
+                width: 100%;
+            .input{
+                width: 220px;
+                font-size: 18px;
+                font-weight: 600;
+                color: $white;
+                text-align: center;
+                background-color: $chocolate;
+                padding: 15px 0px;
+                border-radius: 10px;
+                overflow: hidden;
+                font-family: $font-family-1;
+                margin-left: 0;
+                &:hover{
+                    color: $chocolate;
+                    background-color: black;
+                    cursor: pointer;
+                }
+            }
+        }
+            
+        }
+        .right{
+            padding-bottom: 100px;
+            width: 30%;
+            @include display();
+            flex-direction: column;
+            .send{
+                width: 100%;
+                @include display();
+                padding: 10px 0px;
+                .hand{
+                    border-radius: 5px;
+                    background-color: $color;
+                    margin-left: 0;
+                    padding: 15px 15px;
+                    @include display();
+                    i{
+                       
+                        color: $chocolate;
+                        font-size: 30px;
+                    }
+                }
+                .none{
+                    width: 100%;
+                    margin-left: 10px;
+                    h1{
+                        font-size: 22px;
+                        font-family: $font-family-2;
 
+                    }
+                    p{
+                        font-size: 16px;
+                        font-family: $font-family-1;
+                        transition: all 0.5s ease;
+                        &:hover{
+                            transition: all 0.8s ease;
+                            color: $chocolate;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
 
-
-
+        }
+        }
+    }
+}
+}
+.section9{
+    background-color: black;
+    padding: 140px 0px;
+    .container1{
+        @include container1();
+        .col{
+            @include display();
+            width: 100%;
+            gap: 50px;
+            .col-1{
+                width: 25%;
+                margin-left: 0;
+                div{
+                    width: 100%;
+                    padding-bottom: 20px;
+                    img{
+                        background-position: center;
+                       background-size: cover;
+                         overflow: hidden;
+                         object-fit: cover; 
+                    }
+                }
+                p{
+                    padding-top: 20px;
+                    font-size: 16px;
+                    font-family: $font-family-1;
+                    color: $white;
+                }
+                .p{
+                    padding-top: 37px;
+                    color: $white;
+                    font-family: $font-family-2;
+                    font-size: 22px;
+                }
+            }
+            .col-2{
+                width: 16%;
+                h1{
+                    color: $white;
+                    font-family: $font-family-1;
+                    font-size: 19px;
+                    padding-bottom: 40px;
+                }
+                p{
+                    color: $white;
+                    font-family: $font-family-1;
+                    font-size: 16px;
+                    font-weight: 500;
+                    padding: 15px 0px;
+                    transition: all 0.5s ease;
+                    &:hover{
+                        transition: all 0.8s ease;
+                        color: $chocolate;
+                        cursor: pointer;
+                    }
+                }
+            }
+            .col-3{
+                width: 16%;
+                h1{
+                    color: $white;
+                    font-family: $font-family-1;
+                    font-size: 19px;
+                    padding-bottom: 40px;
+                }
+                p{
+                    color: $white;
+                    font-family: $font-family-1;
+                    font-size: 16px;
+                    font-weight: 500;
+                    padding: 15px 0px;
+                    transition: all 0.5s ease;
+                    &:hover{
+                        transition: all 0.8s ease;
+                        color: $chocolate;
+                        cursor: pointer;
+                    }
+                }
+            }
+            .col-4{
+                width: 22%;
+                h1{
+                    width: 100%;
+                    color: $white;
+                    font-family: $font-family-1;
+                    font-size: 19px;
+                    padding-bottom: 40px;
+                }
+                .icon-1{
+                    width: 100%;
+                    padding-bottom: 20px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 21px;
+                    div{
+                            width: 20%;
+                            height: 52px;
+                            background-color: $chocolate;
+                            border-radius: 6px;
+                            @include display();
+                            transition: all 0.4s;
+                            border-top: 3px solid transparent;
+                            border-right: 3px solid transparent;
+                        &:hover{
+                            cursor: pointer;
+                            color: $chocolate;
+                            background-color: $white;
+                        }
+                        i{
+                           font-size: 25px;
+                        }
+                    }
+                }
+                .icon-2{
+                    width: 100%;
+                    @include display();
+                    padding: 20px 0px;
+                    i{
+                        font-size: 19px;
+                        color: $chocolate;
+                    }
+                    p{
+                        width: 90%;
+                        color: $white;
+                        font-size: 16px;
+                        font-family: $font-family-1;
+                        font-weight: 400;
+                    }
+                }
+                .icon-3{
+                    width: 100%;
+                    @include display();
+                    padding: 20px 0px;
+                    i{
+                        font-size: 19px;
+                        color: $chocolate;
+                        margin-left: 5px;
+                    }
+                    p{
+                        width: 89%;
+                        color: $white;
+                        font-size: 16px;
+                        font-family: $font-family-1;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+    }
+}
+footer{
+    margin-top: 1px;
+    padding: 30px 0px;
+    background-color: black;
+    .container1{
+        @include container1();
+        .end{
+         @include display();
+         .end-1{
+            margin-left: 0;
+            p{
+                color: $white;
+                font-family: $font-family-1;
+                font-size: 16px;
+                font-weight: 500;
+            }
+         }
+         .end-2{
+            @include display();
+            gap: 30px;
+            margin-right: 0;
+            .p1{
+                color: $white;
+                font-family: $font-family-1;
+                font-size: 16px;
+                font-weight: 500;
+                padding: 15px 0px;
+                transition: all 0.5s ease;
+                &:hover{
+                    transition: all 0.8s ease;
+                    color: $chocolate;
+                    cursor: pointer;
+                }
+            }
+            .p2{
+                color: $white;
+                font-family: $font-family-1;
+                font-size: 16px;
+                font-weight: 500;
+                padding: 15px 0px;
+                transition: all 0.5s ease;
+                &:hover{
+                    transition: all 0.8s ease;
+                    color: $chocolate;
+                    cursor: pointer;
+                }
+            }
+         }
+        }
+    }
+}
+ul  {
+    li {
+        ul.submenu,ul.submenu1,ul.submenu2,ul.submenu3{
+    flex-direction: column;
+    padding: 18px 10px;
+    width: 155px;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    position: absolute;
+    display: none;
+    font-size: 17px;
+    z-index: 2;
+}
+}
+  }
+  ul  {
+    li {
+        ul.submenu,ul.submenu1,ul.submenu2,ul.submenu3 {
+            li{
+    display: block;
+}
+}
+}
+  }
+  
+  ul  {
+    li{
+        &:hover {
+            ul.submenu,ul.submenu1,ul.submenu2,ul.submenu3{
+        display: block;
+    }
+    }
+    }
+   
+  }
 
 
 
@@ -1003,6 +1694,11 @@
                     }
                 }
             }
+        }
+    }
+    .section7{
+        .container1{
+            width: 95%;
         }
     }
 }
@@ -1096,7 +1792,7 @@
 }
 .section3{
     .container1{
-        width: 70%;
+        width: 100%;
         .barry{
             width: 100%;
             
@@ -1150,6 +1846,95 @@
     }
     }
 }
+.section5{
+    .container1{
+        width: 95%;
+            .grid{
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                .div1,.div2,.div3,.div4,.div5,.div6,.div7,.div8{
+                    width: 48%;
+                    background-color: aqua;
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+    }
+}
+.section6{
+    .container1{
+        width: 95%;
+        .happy{
+            width: 100%;
+            .happier{
+                .s-4,.s-5,.s-6,.s-7,.s-8{
+                    display: none;
+                }
+                .s-1,.s-2,.s-3{
+                    width: 33%;
+                }
+            }
+           
+        }
+    }
+}
+.section8{
+    width: 100%;
+    .container1{
+        width: 65%;
+        .new{
+            width: 100%;
+            flex-direction: column;
+            .name{
+                width: 100%;
+            }
+            .west{
+                flex-direction: column;
+              width: 100%;
+              .left{
+                width: 100%;
+              }
+              .right{
+                flex-direction: column;
+                width: 100%;
+                .send{
+                    width: 100%;
+                    .none{
+                        width: 100%;
+                    }
+                }
+            }
+            }
+
+        }
+    }
+}
+.section9{
+    .container1{
+        width: 90%;
+        .col{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            .col-1{
+                width: 45%;
+            }
+            .col-2{
+                width: 45%;
+            }
+            .col-3{
+                width: 45%;
+            }
+            .col-4{
+                width: 45%;
+            }
+        }
+    }
+}
+
+
 }
 @media screen and (max-width:768px) {
     .one{
@@ -1174,40 +1959,40 @@
                 
             }
         }
-        .section1{
-            .container1{
-                width: 100%;
-                .good{width: 100%;
-                    flex-direction: column;
-                    .better{
+    }
+    .section1{
+        .container1{
+            width: 100%;
+            .good{width: 100%;
+                flex-direction: column;
+                .better{
+                    width: 100%;
+                    .sekil{
+                        max-width: 100%;
                         width: 100%;
-                        .sekil{
-                            max-width: 100%;
-                            width: 100%;
-                        }
                     }
-                   
                 }
+               
             }
-            
         }
-        .best{
-            width: 50%;
-            .most{
-                width: 100%;
-                .a1,.a2,.a3{
+        
+    }
+    .best{
+        width: 50%;
+        .most{
+            width: 100%;
+            .a1,.a2,.a3{
+                margin-left: 0;
+                width: 90%;
+                display: flex;
+                flex-direction: column;
+                .icon{
+                    width: 80%;
+                }
+                .b1,.b2{
                     margin-left: 0;
-                    width: 90%;
-                    display: flex;
-                    flex-direction: column;
-                    .icon{
-                        width: 80%;
-                    }
-                    .b1,.b2{
-                        margin-left: 0;
-                        width: 100%;
-                      
-                    }
+                    width: 100%;
+                  
                 }
             }
         }
@@ -1216,7 +2001,7 @@
         .container1{
             width: 100%;
             .display{
-                width: 80%;
+                width: 100%;
                 .name{
                     width: 100%;
                 }
@@ -1231,9 +2016,9 @@
     }
     .section4{
         .container1{
-            width: 90%;
+            width: 100%;
             .poco{
-                width: 80%;
+                width: 100%;
                 .name{
                     width: 100%;
                     .off-2{
@@ -1243,7 +2028,7 @@
                 .name-1{
                     width: 100%;
                 .css-1{
-                    width: 80%;
+                    width: 100%;
                 }
                 .css-2{
                     display: none;
@@ -1253,6 +2038,142 @@
                 }
             }
         }
+        }
+    }
+    .section5{
+        .container1{
+            width: 100%;
+            .sign{
+                width: 100%;
+                .mind{
+                    width: 70%;
+                }
+            }
+                .grid{
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    .div1,.div2,.div3,.div4,.div5,.div6,.div7,.div8{
+                        width: 100%;
+                        background-color: aqua;
+                        img{
+                            width: 100%;
+                        }
+                    }
+                }
+        }
+    }
+    .section6{
+        .container1{
+            width: 100%;
+            .happy{
+                width: 100%;
+                .happier{
+                    .s-4,.s-5,.s-6,.s-7,.s-8,.s-2,.s-3{
+                        display: none;
+                    }
+                    .s-1{
+                        width: 100%;
+                    }
+                }
+               
+            }
+        }
+    }
+    .section7{
+        .container1{
+            width: 100%;
+            .boolean{
+            .false{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                .sun-1,.sun-2,.sun-3{
+                    width: 100%;
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    }
+    .section8{
+        width: 100%;
+        .container1{
+            width: 100%;
+            .new{
+                width: 100%;
+                flex-direction: column;
+                .name{
+                    width: 100%;
+                }
+                .west{
+                    flex-direction: column;
+                  width: 100%;
+                  .left{
+                    flex-direction: column;
+                    width: 100%;
+                    .edit-1,.edit-2,.textarea{
+                        width: 100%;
+                        flex-direction: column;
+                    }
+                  }
+                  .right{
+                    flex-direction: column;
+                    width: 100%;
+                    .send{
+                        width: 100%;
+                        .none{
+                            width: 100%;
+                        }
+                    }
+                }
+                }
+    
+            }
+        }
+    }
+    .section9{
+        .container1{
+            width: 90%;
+            .col{
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                .col-1{
+                    width: 100%;
+                }
+                .col-2{
+                    width: 40%;
+                    margin-left: 0;
+                }
+                .col-3{
+                    width: 40%;
+                }
+                .col-4{
+                    width: 45%;
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+    footer{
+        .container1{
+            width: 100%;
+            .end{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                margin-left: 0;
+                .end-2{
+                    width: 100%;
+                  margin-left: 0;
+                 p{
+                    margin-left: 0;
+                 }
+                }
+            }
         }
     }
 }

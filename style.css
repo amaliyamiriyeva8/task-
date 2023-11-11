@@ -4,6 +4,20 @@
   box-sizing: border-box;
 }
 
+body::-webkit-scrollbar {
+  width: 8px;
+}
+body::-webkit-scrollbar-track {
+  background-color: rgb(239, 212, 177);
+}
+body::-webkit-scrollbar-thumb {
+  background-color: chocolate;
+  border-radius: 4px;
+}
+body::-webkit-scrollbar-thumb:hover {
+  background-color: grey;
+}
+
 nav {
   background-color: white;
 }
@@ -45,9 +59,6 @@ nav .container1 .navbar .menu {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   cursor: pointer;
   position: relative;
-}
-nav .container1 .navbar .menu:hover .dropdown-content {
-  display: block;
 }
 nav .container1 .navbar .menu li {
   position: relative;
@@ -875,8 +886,8 @@ nav .container1 .navbar .thrid button:hover {
   padding-bottom: 40px;
   width: 100%;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 .section4 .container1 .poco .name-1 .css-1 .no-2 .ipsum, .section4 .container1 .poco .name-1 .css-2 .no-2 .ipsum, .section4 .container1 .poco .name-1 .css-3 .no-2 .ipsum {
   width: 90%;
@@ -890,8 +901,8 @@ nav .container1 .navbar .thrid button:hover {
   padding-bottom: 40px;
   width: 100%;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 .section4 .container1 .poco .name-1 .css-1 .no-4 .ipsum, .section4 .container1 .poco .name-1 .css-2 .no-4 .ipsum, .section4 .container1 .poco .name-1 .css-3 .no-4 .ipsum {
   width: 90%;
@@ -905,8 +916,8 @@ nav .container1 .navbar .thrid button:hover {
   padding-bottom: 40px;
   width: 100%;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 .section4 .container1 .poco .name-1 .css-1 .no-6 .ipsum, .section4 .container1 .poco .name-1 .css-2 .no-6 .ipsum, .section4 .container1 .poco .name-1 .css-3 .no-6 .ipsum {
   width: 90%;
@@ -915,6 +926,798 @@ nav .container1 .navbar .thrid button:hover {
   color: rgb(65, 65, 65);
   font-size: 15px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.section5 .container1 {
+  max-width: 1360px;
+  margin: auto;
+  padding: 0px 32px;
+}
+.section5 .container1 .sign {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.section5 .container1 .sign .name {
+  width: 80%;
+}
+.section5 .container1 .sign .name .off-1 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section5 .container1 .sign .name .off-1 img {
+  margin-right: 5px;
+  width: 18px;
+  height: 20px;
+  vertical-align: middle;
+}
+.section5 .container1 .sign .name .off-1 p {
+  font-weight: 600;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: black;
+  font-size: 16px;
+  margin-left: 5px;
+}
+.section5 .container1 .sign .name .off-2 {
+  width: 100%;
+  text-align: center;
+}
+.section5 .container1 .sign .name .off-2 p {
+  padding-top: 10px;
+  padding-bottom: 30px;
+  font-size: 45px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 900;
+}
+.section5 .container1 .mind {
+  width: 70%;
+}
+.section5 .container1 .mind ul {
+  padding: 40px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  cursor: pointer;
+  flex-wrap: wrap;
+}
+.section5 .container1 .mind ul li {
+  font-size: 17px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 5px 0px;
+  color: black;
+}
+.section5 .container1 .mind ul li:hover {
+  color: chocolate;
+  font-weight: 600;
+}
+.section5 .container1 .grid {
+  padding-bottom: 70px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 24px;
+}
+.section5 .container1 .grid .div1, .section5 .container1 .grid .div2, .section5 .container1 .grid .div3, .section5 .container1 .grid .div4, .section5 .container1 .grid .div5, .section5 .container1 .grid .div6, .section5 .container1 .grid .div7 {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  width: 100%;
+  overflow: hidden;
+  gap: 10px;
+  position: relative;
+  cursor: pointer;
+}
+.section5 .container1 .grid .div1::before, .section5 .container1 .grid .div2::before, .section5 .container1 .grid .div3::before, .section5 .container1 .grid .div4::before, .section5 .container1 .grid .div5::before, .section5 .container1 .grid .div6::before, .section5 .container1 .grid .div7::before {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  height: 120px;
+  content: "The best way to impress your web";
+  background-color: chocolate;
+  color: white;
+  border-radius: 7px;
+  font-size: 22px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  position: absolute;
+  cursor: pointer;
+  left: 60px;
+  bottom: 30px;
+  right: 0;
+  transform: scale(0);
+  z-index: 1;
+  transition: all 0.5s ease;
+}
+.section5 .container1 .grid .div1:hover::before, .section5 .container1 .grid .div2:hover::before, .section5 .container1 .grid .div3:hover::before, .section5 .container1 .grid .div4:hover::before, .section5 .container1 .grid .div5:hover::before, .section5 .container1 .grid .div6:hover::before, .section5 .container1 .grid .div7:hover::before {
+  transform: scale(1);
+}
+.section5 .container1 .grid .div1 img, .section5 .container1 .grid .div2 img, .section5 .container1 .grid .div3 img, .section5 .container1 .grid .div4 img, .section5 .container1 .grid .div5 img, .section5 .container1 .grid .div6 img, .section5 .container1 .grid .div7 img {
+  width: 100%;
+  height: 370px;
+  border-style: none;
+  max-width: 100%;
+  vertical-align: middle;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: all 0.5s ease;
+  background-position: center;
+  background-size: cover;
+}
+.section5 .container1 .grid .div1 img:hover::before, .section5 .container1 .grid .div2 img:hover::before, .section5 .container1 .grid .div3 img:hover::before, .section5 .container1 .grid .div4 img:hover::before, .section5 .container1 .grid .div5 img:hover::before, .section5 .container1 .grid .div6 img:hover::before, .section5 .container1 .grid .div7 img:hover::before {
+  transform: scale(1);
+}
+.section5 .container1 .grid .div1 img:hover, .section5 .container1 .grid .div2 img:hover, .section5 .container1 .grid .div3 img:hover, .section5 .container1 .grid .div4 img:hover, .section5 .container1 .grid .div5 img:hover, .section5 .container1 .grid .div6 img:hover, .section5 .container1 .grid .div7 img:hover {
+  filter: brightness(55%);
+  transition: all 1s ease;
+}
+.section5 .container1 .grid .div8 {
+  width: 100%;
+  grid-column: 2/4;
+}
+.section5 .container1 .grid .div8 img {
+  width: 100%;
+  height: 370px;
+  border-style: none;
+  background-position: center;
+  background-size: cover;
+  max-width: 100%;
+  vertical-align: middle;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: all 0.5s ease;
+}
+.section5 .container1 .grid .div8 img:hover {
+  filter: brightness(55%);
+  transition: all 1s ease;
+}
+
+.section6 {
+  padding-top: 50px;
+}
+.section6 .container1 {
+  max-width: 1360px;
+  margin: auto;
+  padding: 0px 32px;
+}
+.section6 .container1 .happy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.section6 .container1 .happy .name {
+  width: 100%;
+}
+.section6 .container1 .happy .name .off-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section6 .container1 .happy .name .off-1 img {
+  margin-right: 5px;
+  width: 18px;
+  height: 20px;
+  vertical-align: middle;
+}
+.section6 .container1 .happy .name .off-1 p {
+  font-weight: 600;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: black;
+  font-size: 16px;
+  margin-left: 5px;
+}
+.section6 .container1 .happy .name .off-2 {
+  width: 100%;
+  text-align: center;
+}
+.section6 .container1 .happy .name .off-2 p {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 45px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 900;
+}
+.section6 .container1 .happy .happier {
+  width: 100%;
+  height: 200px;
+  padding: 60px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+}
+.section6 .container1 .happy .happier .s-1, .section6 .container1 .happy .happier .s-2, .section6 .container1 .happy .happier .s-3, .section6 .container1 .happy .happier .s-4, .section6 .container1 .happy .happier .s-5, .section6 .container1 .happy .happier .s-6, .section6 .container1 .happy .happier .s-7, .section6 .container1 .happy .happier .s-8 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 210px;
+  padding: 25px 0px;
+  border: 1px solid chocolate;
+  border-radius: 4px;
+}
+.section6 .container1 .icons {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 80px;
+  padding-top: 40px;
+}
+.section6 .container1 .icons i {
+  font-size: 40px;
+  color: rgb(91, 90, 90);
+}
+.section6 .container1 .icons .a {
+  font-size: 40px;
+  color: chocolate;
+}
+
+.section7 {
+  padding: 60px 0px;
+}
+.section7 .container1 {
+  max-width: 1360px;
+  margin: auto;
+  padding: 0px 32px;
+}
+.section7 .container1 .boolean {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.section7 .container1 .boolean .name {
+  width: 80%;
+}
+.section7 .container1 .boolean .name .off-1 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section7 .container1 .boolean .name .off-1 img {
+  margin-right: 5px;
+  width: 18px;
+  height: 20px;
+  vertical-align: middle;
+}
+.section7 .container1 .boolean .name .off-1 p {
+  font-weight: 600;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: black;
+  font-size: 16px;
+  margin-left: 5px;
+}
+.section7 .container1 .boolean .name .off-2 {
+  width: 100%;
+  text-align: center;
+}
+.section7 .container1 .boolean .name .off-2 p {
+  padding-top: 10px;
+  padding-bottom: 30px;
+  font-size: 45px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 900;
+}
+.section7 .container1 .boolean .false {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 20px;
+}
+.section7 .container1 .boolean .false .sun-1, .section7 .container1 .boolean .false .sun-2, .section7 .container1 .boolean .false .sun-3 {
+  border-radius: 5px;
+  border: 1px solid rgb(244, 238, 225);
+  width: 32%;
+}
+.section7 .container1 .boolean .false .sun-1 .x-1, .section7 .container1 .boolean .false .sun-2 .x-1, .section7 .container1 .boolean .false .sun-3 .x-1 {
+  width: 100%;
+}
+.section7 .container1 .boolean .false .sun-1 .x-1 img, .section7 .container1 .boolean .false .sun-2 .x-1 img, .section7 .container1 .boolean .false .sun-3 .x-1 img {
+  background-position: center;
+  background-size: cover;
+  max-width: 100%;
+  border-radius: 5px;
+  transition: all 0.5s ease;
+}
+.section7 .container1 .boolean .false .sun-1 .x-1 img:hover, .section7 .container1 .boolean .false .sun-2 .x-1 img:hover, .section7 .container1 .boolean .false .sun-3 .x-1 img:hover {
+  filter: brightness(55%);
+  transition: all 1s ease;
+}
+.section7 .container1 .boolean .false .sun-1 .x-2, .section7 .container1 .boolean .false .sun-2 .x-2, .section7 .container1 .boolean .false .sun-3 .x-2 {
+  padding: 35px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section7 .container1 .boolean .false .sun-1 .x-2 .now, .section7 .container1 .boolean .false .sun-2 .x-2 .now, .section7 .container1 .boolean .false .sun-3 .x-2 .now {
+  width: 86%;
+}
+.section7 .container1 .boolean .false .sun-1 .x-2 .now p, .section7 .container1 .boolean .false .sun-2 .x-2 .now p, .section7 .container1 .boolean .false .sun-3 .x-2 .now p {
+  padding-bottom: 6px;
+  font-size: 18px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #676767;
+}
+.section7 .container1 .boolean .false .sun-1 .x-2 .now h2, .section7 .container1 .boolean .false .sun-2 .x-2 .now h2, .section7 .container1 .boolean .false .sun-3 .x-2 .now h2 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 22px;
+  padding: 5px 0px;
+  transition: all 0.5s ease;
+}
+.section7 .container1 .boolean .false .sun-1 .x-2 .now h2:hover, .section7 .container1 .boolean .false .sun-2 .x-2 .now h2:hover, .section7 .container1 .boolean .false .sun-3 .x-2 .now h2:hover {
+  transition: all 0.7s ease;
+  color: chocolate;
+  cursor: pointer;
+}
+.section7 .container1 .boolean .false .sun-1 .x-2 .now h1, .section7 .container1 .boolean .false .sun-2 .x-2 .now h1, .section7 .container1 .boolean .false .sun-3 .x-2 .now h1 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 15px;
+  color: chocolate;
+  padding-top: 12px;
+  cursor: pointer;
+}
+.section7 .container1 .boolean .false .sun-1 .x-2 .now h1 i, .section7 .container1 .boolean .false .sun-2 .x-2 .now h1 i, .section7 .container1 .boolean .false .sun-3 .x-2 .now h1 i {
+  margin-left: 3px;
+  font-size: 18px;
+  transition: all 0.5s ease-in;
+}
+.section7 .container1 .boolean .false .sun-1 .x-2 .now h1 i:hover, .section7 .container1 .boolean .false .sun-2 .x-2 .now h1 i:hover, .section7 .container1 .boolean .false .sun-3 .x-2 .now h1 i:hover {
+  transition: all 0.9s ease-in;
+  margin-left: 23px;
+}
+
+.section8 {
+  padding: 100px 0px;
+}
+.section8 .container1 {
+  max-width: 1360px;
+  margin: auto;
+  padding: 0px 32px;
+}
+.section8 .container1 .new {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.section8 .container1 .new .name {
+  width: 80%;
+}
+.section8 .container1 .new .name .off-1 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section8 .container1 .new .name .off-1 img {
+  margin-right: 5px;
+  width: 18px;
+  height: 20px;
+  vertical-align: middle;
+}
+.section8 .container1 .new .name .off-1 p {
+  font-weight: 600;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: black;
+  font-size: 16px;
+  margin-left: 5px;
+}
+.section8 .container1 .new .name .off-2 {
+  width: 100%;
+  text-align: center;
+}
+.section8 .container1 .new .name .off-2 p {
+  padding-top: 10px;
+  padding-bottom: 30px;
+  font-size: 45px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 900;
+}
+.section8 .container1 .new .west {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 40px 0px;
+}
+.section8 .container1 .new .west .left {
+  width: 66%;
+}
+.section8 .container1 .new .west .left .edit-1 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.section8 .container1 .new .west .left .edit-1 .class-1 {
+  width: 100%;
+  height: 70px;
+}
+.section8 .container1 .new .west .left .edit-1 .class-1 input {
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+  border: 1px solid chocolate;
+  padding: 10px;
+  font-size: 17px;
+}
+.section8 .container1 .new .west .left .edit-1 .class-2 {
+  width: 100%;
+  height: 70px;
+}
+.section8 .container1 .new .west .left .edit-1 .class-2 input {
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+  border: 1px solid chocolate;
+  padding: 10px;
+  font-size: 17px;
+}
+.section8 .container1 .new .west .left .edit-2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding-top: 20px;
+}
+.section8 .container1 .new .west .left .edit-2 .class-3 {
+  width: 100%;
+  height: 70px;
+}
+.section8 .container1 .new .west .left .edit-2 .class-3 input {
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+  border: 1px solid chocolate;
+  padding: 10px;
+  font-size: 17px;
+}
+.section8 .container1 .new .west .left .edit-2 .class-4 {
+  width: 100%;
+  height: 70px;
+}
+.section8 .container1 .new .west .left .edit-2 .class-4 input {
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+  border: 1px solid chocolate;
+  padding: 10px;
+  font-size: 17px;
+}
+.section8 .container1 .new .west .left .textarea {
+  width: 100%;
+  height: 140px;
+  padding-top: 20px;
+}
+.section8 .container1 .new .west .left .textarea textarea {
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+  border: 1px solid chocolate;
+  padding: 10px;
+  font-size: 17px;
+}
+.section8 .container1 .new .west .left .div {
+  padding-top: 40px;
+  width: 100%;
+}
+.section8 .container1 .new .west .left .div .input {
+  width: 220px;
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+  background-color: chocolate;
+  padding: 15px 0px;
+  border-radius: 10px;
+  overflow: hidden;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-left: 0;
+}
+.section8 .container1 .new .west .left .div .input:hover {
+  color: chocolate;
+  background-color: black;
+  cursor: pointer;
+}
+.section8 .container1 .new .west .right {
+  padding-bottom: 100px;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.section8 .container1 .new .west .right .send {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0px;
+}
+.section8 .container1 .new .west .right .send .hand {
+  border-radius: 5px;
+  background-color: rgb(244, 238, 225);
+  margin-left: 0;
+  padding: 15px 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section8 .container1 .new .west .right .send .hand i {
+  color: chocolate;
+  font-size: 30px;
+}
+.section8 .container1 .new .west .right .send .none {
+  width: 100%;
+  margin-left: 10px;
+}
+.section8 .container1 .new .west .right .send .none h1 {
+  font-size: 22px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.section8 .container1 .new .west .right .send .none p {
+  font-size: 16px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  transition: all 0.5s ease;
+}
+.section8 .container1 .new .west .right .send .none p:hover {
+  transition: all 0.8s ease;
+  color: chocolate;
+  cursor: pointer;
+}
+
+.section9 {
+  background-color: black;
+  padding: 140px 0px;
+}
+.section9 .container1 {
+  max-width: 1360px;
+  margin: auto;
+  padding: 0px 32px;
+}
+.section9 .container1 .col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 50px;
+}
+.section9 .container1 .col .col-1 {
+  width: 25%;
+  margin-left: 0;
+}
+.section9 .container1 .col .col-1 div {
+  width: 100%;
+  padding-bottom: 20px;
+}
+.section9 .container1 .col .col-1 div img {
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.section9 .container1 .col .col-1 p {
+  padding-top: 20px;
+  font-size: 16px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+}
+.section9 .container1 .col .col-1 .p {
+  padding-top: 37px;
+  color: white;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 22px;
+}
+.section9 .container1 .col .col-2 {
+  width: 16%;
+}
+.section9 .container1 .col .col-2 h1 {
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 19px;
+  padding-bottom: 40px;
+}
+.section9 .container1 .col .col-2 p {
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 15px 0px;
+  transition: all 0.5s ease;
+}
+.section9 .container1 .col .col-2 p:hover {
+  transition: all 0.8s ease;
+  color: chocolate;
+  cursor: pointer;
+}
+.section9 .container1 .col .col-3 {
+  width: 16%;
+}
+.section9 .container1 .col .col-3 h1 {
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 19px;
+  padding-bottom: 40px;
+}
+.section9 .container1 .col .col-3 p {
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 15px 0px;
+  transition: all 0.5s ease;
+}
+.section9 .container1 .col .col-3 p:hover {
+  transition: all 0.8s ease;
+  color: chocolate;
+  cursor: pointer;
+}
+.section9 .container1 .col .col-4 {
+  width: 22%;
+}
+.section9 .container1 .col .col-4 h1 {
+  width: 100%;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 19px;
+  padding-bottom: 40px;
+}
+.section9 .container1 .col .col-4 .icon-1 {
+  width: 100%;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 21px;
+}
+.section9 .container1 .col .col-4 .icon-1 div {
+  width: 20%;
+  height: 52px;
+  background-color: chocolate;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.4s;
+  border-top: 3px solid transparent;
+  border-right: 3px solid transparent;
+}
+.section9 .container1 .col .col-4 .icon-1 div:hover {
+  cursor: pointer;
+  color: chocolate;
+  background-color: white;
+}
+.section9 .container1 .col .col-4 .icon-1 div i {
+  font-size: 25px;
+}
+.section9 .container1 .col .col-4 .icon-2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0px;
+}
+.section9 .container1 .col .col-4 .icon-2 i {
+  font-size: 19px;
+  color: chocolate;
+}
+.section9 .container1 .col .col-4 .icon-2 p {
+  width: 90%;
+  color: white;
+  font-size: 16px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 400;
+}
+.section9 .container1 .col .col-4 .icon-3 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0px;
+}
+.section9 .container1 .col .col-4 .icon-3 i {
+  font-size: 19px;
+  color: chocolate;
+  margin-left: 5px;
+}
+.section9 .container1 .col .col-4 .icon-3 p {
+  width: 89%;
+  color: white;
+  font-size: 16px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 400;
+}
+
+footer {
+  margin-top: 1px;
+  padding: 30px 0px;
+  background-color: black;
+}
+footer .container1 {
+  max-width: 1360px;
+  margin: auto;
+  padding: 0px 32px;
+}
+footer .container1 .end {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .container1 .end .end-1 {
+  margin-left: 0;
+}
+footer .container1 .end .end-1 p {
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+footer .container1 .end .end-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-right: 0;
+}
+footer .container1 .end .end-2 .p1 {
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 15px 0px;
+  transition: all 0.5s ease;
+}
+footer .container1 .end .end-2 .p1:hover {
+  transition: all 0.8s ease;
+  color: chocolate;
+  cursor: pointer;
+}
+footer .container1 .end .end-2 .p2 {
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 15px 0px;
+  transition: all 0.5s ease;
+}
+footer .container1 .end .end-2 .p2:hover {
+  transition: all 0.8s ease;
+  color: chocolate;
+  cursor: pointer;
+}
+
+ul li ul.submenu, ul li ul.submenu1, ul li ul.submenu2, ul li ul.submenu3 {
+  flex-direction: column;
+  padding: 18px 10px;
+  width: 155px;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  position: absolute;
+  display: none;
+  font-size: 17px;
+  z-index: 2;
+}
+
+ul li ul.submenu li, ul li ul.submenu1 li, ul li ul.submenu2 li, ul li ul.submenu3 li {
+  display: block;
+}
+
+ul li:hover ul.submenu, ul li:hover ul.submenu1, ul li:hover ul.submenu2, ul li:hover ul.submenu3 {
+  display: block;
 }
 
 @media screen and (max-width: 1200px) {
@@ -948,6 +1751,9 @@ nav .container1 .navbar .thrid button:hover {
   }
   .section3 .container1 .barry .you .null {
     width: 100%;
+  }
+  .section7 .container1 {
+    width: 95%;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -1028,7 +1834,7 @@ nav .container1 .navbar .thrid button:hover {
     width: 45%;
   }
   .section3 .container1 {
-    width: 70%;
+    width: 100%;
   }
   .section3 .container1 .barry {
     width: 100%;
@@ -1075,6 +1881,83 @@ nav .container1 .navbar .thrid button:hover {
   .section4 .container1 .poco .name-1 .css-3 {
     display: none;
   }
+  .section5 .container1 {
+    width: 95%;
+  }
+  .section5 .container1 .grid {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .section5 .container1 .grid .div1, .section5 .container1 .grid .div2, .section5 .container1 .grid .div3, .section5 .container1 .grid .div4, .section5 .container1 .grid .div5, .section5 .container1 .grid .div6, .section5 .container1 .grid .div7, .section5 .container1 .grid .div8 {
+    width: 48%;
+    background-color: aqua;
+  }
+  .section5 .container1 .grid .div1 img, .section5 .container1 .grid .div2 img, .section5 .container1 .grid .div3 img, .section5 .container1 .grid .div4 img, .section5 .container1 .grid .div5 img, .section5 .container1 .grid .div6 img, .section5 .container1 .grid .div7 img, .section5 .container1 .grid .div8 img {
+    width: 100%;
+  }
+  .section6 .container1 {
+    width: 95%;
+  }
+  .section6 .container1 .happy {
+    width: 100%;
+  }
+  .section6 .container1 .happy .happier .s-4, .section6 .container1 .happy .happier .s-5, .section6 .container1 .happy .happier .s-6, .section6 .container1 .happy .happier .s-7, .section6 .container1 .happy .happier .s-8 {
+    display: none;
+  }
+  .section6 .container1 .happy .happier .s-1, .section6 .container1 .happy .happier .s-2, .section6 .container1 .happy .happier .s-3 {
+    width: 33%;
+  }
+  .section8 {
+    width: 100%;
+  }
+  .section8 .container1 {
+    width: 65%;
+  }
+  .section8 .container1 .new {
+    width: 100%;
+    flex-direction: column;
+  }
+  .section8 .container1 .new .name {
+    width: 100%;
+  }
+  .section8 .container1 .new .west {
+    flex-direction: column;
+    width: 100%;
+  }
+  .section8 .container1 .new .west .left {
+    width: 100%;
+  }
+  .section8 .container1 .new .west .right {
+    flex-direction: column;
+    width: 100%;
+  }
+  .section8 .container1 .new .west .right .send {
+    width: 100%;
+  }
+  .section8 .container1 .new .west .right .send .none {
+    width: 100%;
+  }
+  .section9 .container1 {
+    width: 90%;
+  }
+  .section9 .container1 .col {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .section9 .container1 .col .col-1 {
+    width: 45%;
+  }
+  .section9 .container1 .col .col-2 {
+    width: 45%;
+  }
+  .section9 .container1 .col .col-3 {
+    width: 45%;
+  }
+  .section9 .container1 .col .col-4 {
+    width: 45%;
+  }
 }
 @media screen and (max-width: 768px) {
   .one {
@@ -1099,36 +1982,36 @@ nav .container1 .navbar .thrid button:hover {
   .one nav .navbar .thrid {
     display: none;
   }
-  .one .section1 .container1 {
+  .section1 .container1 {
     width: 100%;
   }
-  .one .section1 .container1 .good {
+  .section1 .container1 .good {
     width: 100%;
     flex-direction: column;
   }
-  .one .section1 .container1 .good .better {
+  .section1 .container1 .good .better {
     width: 100%;
   }
-  .one .section1 .container1 .good .better .sekil {
+  .section1 .container1 .good .better .sekil {
     max-width: 100%;
     width: 100%;
   }
-  .one .best {
+  .best {
     width: 50%;
   }
-  .one .best .most {
+  .best .most {
     width: 100%;
   }
-  .one .best .most .a1, .one .best .most .a2, .one .best .most .a3 {
+  .best .most .a1, .best .most .a2, .best .most .a3 {
     margin-left: 0;
     width: 90%;
     display: flex;
     flex-direction: column;
   }
-  .one .best .most .a1 .icon, .one .best .most .a2 .icon, .one .best .most .a3 .icon {
+  .best .most .a1 .icon, .best .most .a2 .icon, .best .most .a3 .icon {
     width: 80%;
   }
-  .one .best .most .a1 .b1, .one .best .most .a1 .b2, .one .best .most .a2 .b1, .one .best .most .a2 .b2, .one .best .most .a3 .b1, .one .best .most .a3 .b2 {
+  .best .most .a1 .b1, .best .most .a1 .b2, .best .most .a2 .b1, .best .most .a2 .b2, .best .most .a3 .b1, .best .most .a3 .b2 {
     margin-left: 0;
     width: 100%;
   }
@@ -1136,7 +2019,7 @@ nav .container1 .navbar .thrid button:hover {
     width: 100%;
   }
   .section2 .container1 .display {
-    width: 80%;
+    width: 100%;
   }
   .section2 .container1 .display .name {
     width: 100%;
@@ -1148,10 +2031,10 @@ nav .container1 .navbar .thrid button:hover {
     width: 100%;
   }
   .section4 .container1 {
-    width: 90%;
+    width: 100%;
   }
   .section4 .container1 .poco {
-    width: 80%;
+    width: 100%;
   }
   .section4 .container1 .poco .name {
     width: 100%;
@@ -1163,12 +2046,132 @@ nav .container1 .navbar .thrid button:hover {
     width: 100%;
   }
   .section4 .container1 .poco .name-1 .css-1 {
-    width: 80%;
+    width: 100%;
   }
   .section4 .container1 .poco .name-1 .css-2 {
     display: none;
   }
   .section4 .container1 .poco .name-1 .css-3 {
     display: none;
+  }
+  .section5 .container1 {
+    width: 100%;
+  }
+  .section5 .container1 .sign {
+    width: 100%;
+  }
+  .section5 .container1 .sign .mind {
+    width: 70%;
+  }
+  .section5 .container1 .grid {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .section5 .container1 .grid .div1, .section5 .container1 .grid .div2, .section5 .container1 .grid .div3, .section5 .container1 .grid .div4, .section5 .container1 .grid .div5, .section5 .container1 .grid .div6, .section5 .container1 .grid .div7, .section5 .container1 .grid .div8 {
+    width: 100%;
+    background-color: aqua;
+  }
+  .section5 .container1 .grid .div1 img, .section5 .container1 .grid .div2 img, .section5 .container1 .grid .div3 img, .section5 .container1 .grid .div4 img, .section5 .container1 .grid .div5 img, .section5 .container1 .grid .div6 img, .section5 .container1 .grid .div7 img, .section5 .container1 .grid .div8 img {
+    width: 100%;
+  }
+  .section6 .container1 {
+    width: 100%;
+  }
+  .section6 .container1 .happy {
+    width: 100%;
+  }
+  .section6 .container1 .happy .happier .s-4, .section6 .container1 .happy .happier .s-5, .section6 .container1 .happy .happier .s-6, .section6 .container1 .happy .happier .s-7, .section6 .container1 .happy .happier .s-8, .section6 .container1 .happy .happier .s-2, .section6 .container1 .happy .happier .s-3 {
+    display: none;
+  }
+  .section6 .container1 .happy .happier .s-1 {
+    width: 100%;
+  }
+  .section7 .container1 {
+    width: 100%;
+  }
+  .section7 .container1 .boolean .false {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .section7 .container1 .boolean .false .sun-1, .section7 .container1 .boolean .false .sun-2, .section7 .container1 .boolean .false .sun-3 {
+    width: 100%;
+  }
+  .section7 .container1 .boolean .false .sun-1 img, .section7 .container1 .boolean .false .sun-2 img, .section7 .container1 .boolean .false .sun-3 img {
+    width: 100%;
+  }
+  .section8 {
+    width: 100%;
+  }
+  .section8 .container1 {
+    width: 100%;
+  }
+  .section8 .container1 .new {
+    width: 100%;
+    flex-direction: column;
+  }
+  .section8 .container1 .new .name {
+    width: 100%;
+  }
+  .section8 .container1 .new .west {
+    flex-direction: column;
+    width: 100%;
+  }
+  .section8 .container1 .new .west .left {
+    flex-direction: column;
+    width: 100%;
+  }
+  .section8 .container1 .new .west .left .edit-1, .section8 .container1 .new .west .left .edit-2, .section8 .container1 .new .west .left .textarea {
+    width: 100%;
+    flex-direction: column;
+  }
+  .section8 .container1 .new .west .right {
+    flex-direction: column;
+    width: 100%;
+  }
+  .section8 .container1 .new .west .right .send {
+    width: 100%;
+  }
+  .section8 .container1 .new .west .right .send .none {
+    width: 100%;
+  }
+  .section9 .container1 {
+    width: 90%;
+  }
+  .section9 .container1 .col {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .section9 .container1 .col .col-1 {
+    width: 100%;
+  }
+  .section9 .container1 .col .col-2 {
+    width: 40%;
+    margin-left: 0;
+  }
+  .section9 .container1 .col .col-3 {
+    width: 40%;
+  }
+  .section9 .container1 .col .col-4 {
+    width: 45%;
+    margin-left: 0;
+  }
+  footer .container1 {
+    width: 100%;
+  }
+  footer .container1 .end {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+  }
+  footer .container1 .end .end-2 {
+    width: 100%;
+    margin-left: 0;
+  }
+  footer .container1 .end .end-2 p {
+    margin-left: 0;
   }
 }/*# sourceMappingURL=style.css.map */

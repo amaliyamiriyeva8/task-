@@ -1409,6 +1409,7 @@ nav .container1 .navbar .thrid button:hover {
   border: 1px solid chocolate;
   padding: 10px;
   font-size: 17px;
+  resize: vertical;
 }
 .section8 .container1 .new .west .left .div {
   padding-top: 40px;
@@ -1758,7 +1759,7 @@ ul li:hover ul.submenu, ul li:hover ul.submenu1, ul li:hover ul.submenu2, ul li:
 }
 @media screen and (max-width: 1024px) {
   .section .container1 {
-    width: 70%;
+    width: 100%;
   }
   .section .container1 .item {
     flex-direction: column-reverse;
@@ -1766,12 +1767,26 @@ ul li:hover ul.submenu, ul li:hover ul.submenu1, ul li:hover ul.submenu2, ul li:
   .section .container1 .item .for {
     width: 100%;
   }
+  .section .container1 .item .for .photo1 {
+    margin-top: 50px;
+  }
+  .section .container1 .item .for .design {
+    width: 100%;
+  }
+  .section .container1 .item .for .design h1 {
+    font-size: 50px;
+  }
   .section .container1 .item .while {
     width: 100%;
   }
+  .section .container1 .item .while .img1 {
+    width: 80%;
+    max-width: 80%;
+    margin-left: 10px;
+  }
   .section .container1 .item .while .img2 {
-    max-width: 100%;
-    width: 100%;
+    max-width: 80%;
+    width: 80%;
   }
   .section1 .container1 {
     width: 85%;

@@ -994,6 +994,7 @@ nav .container1 .navbar .thrid button:hover {
 .section5 .container1 .mind ul li:hover {
   color: chocolate;
   font-weight: 600;
+  border-bottom: 2px solid chocolate;
 }
 .section5 .container1 .grid {
   padding-bottom: 70px;
@@ -1061,6 +1062,40 @@ nav .container1 .navbar .thrid button:hover {
 .section5 .container1 .grid .div8 {
   width: 100%;
   grid-column: 2/4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  width: 100%;
+  overflow: hidden;
+  gap: 10px;
+  position: relative;
+  cursor: pointer;
+}
+.section5 .container1 .grid .div8::before {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  height: 120px;
+  content: "The best way to impress your web";
+  background-color: chocolate;
+  color: white;
+  border-radius: 7px;
+  font-size: 22px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  position: absolute;
+  cursor: pointer;
+  left: 120px;
+  bottom: 30px;
+  right: 0;
+  transform: scale(0);
+  z-index: 1;
+  transition: all 0.5s ease;
+}
+.section5 .container1 .grid .div8:hover::before {
+  transform: scale(1);
 }
 .section5 .container1 .grid .div8 img {
   width: 100%;
@@ -1073,6 +1108,9 @@ nav .container1 .navbar .thrid button:hover {
   -o-object-fit: cover;
      object-fit: cover;
   transition: all 0.5s ease;
+}
+.section5 .container1 .grid .div8 img:hover::before {
+  transform: scale(1);
 }
 .section5 .container1 .grid .div8 img:hover {
   filter: brightness(55%);
@@ -1142,6 +1180,13 @@ nav .container1 .navbar .thrid button:hover {
   padding: 25px 0px;
   border: 1px solid chocolate;
   border-radius: 4px;
+}
+.section6 .container1 .happy .happier .s-1 img, .section6 .container1 .happy .happier .s-2 img, .section6 .container1 .happy .happier .s-3 img, .section6 .container1 .happy .happier .s-4 img, .section6 .container1 .happy .happier .s-5 img, .section6 .container1 .happy .happier .s-6 img, .section6 .container1 .happy .happier .s-7 img, .section6 .container1 .happy .happier .s-8 img {
+  transition: all 0.8s ease;
+}
+.section6 .container1 .happy .happier .s-1 img:hover, .section6 .container1 .happy .happier .s-2 img:hover, .section6 .container1 .happy .happier .s-3 img:hover, .section6 .container1 .happy .happier .s-4 img:hover, .section6 .container1 .happy .happier .s-5 img:hover, .section6 .container1 .happy .happier .s-6 img:hover, .section6 .container1 .happy .happier .s-7 img:hover, .section6 .container1 .happy .happier .s-8 img:hover {
+  scale: 1.1;
+  cursor: pointer;
 }
 .section6 .container1 .icons {
   width: 20%;
@@ -1758,6 +1803,12 @@ ul li:hover ul.submenu, ul li:hover ul.submenu1, ul li:hover ul.submenu2, ul li:
   }
 }
 @media screen and (max-width: 1024px) {
+  .one {
+    width: 100%;
+  }
+  .one .first img {
+    width: 70%;
+  }
   .section .container1 {
     width: 100%;
   }
@@ -1898,6 +1949,9 @@ ul li:hover ul.submenu, ul li:hover ul.submenu1, ul li:hover ul.submenu2, ul li:
   }
   .section5 .container1 {
     width: 95%;
+  }
+  .section5 .container1 .mind {
+    width: 90%;
   }
   .section5 .container1 .grid {
     width: 100%;
